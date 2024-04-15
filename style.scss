@@ -1,0 +1,35 @@
+//VARIABLES
+@import "./partials/variables";
+
+//GLOBAL STYLES
+@import "./partials/globals";
+//SECTIONS
+@import "./partials/header";
+@import "./partials/welcome";
+@import "./partials/footer";
+@import "./partials/gallery";
+@import "./partials/wavy";
+
+.bg {
+  position: relative;
+  height: 100vh;
+}
+.custom-shape-divider-bottom-1713176521 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1713176521 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1713176521 .shape-fill {
+  fill: #00f9ff;
+}

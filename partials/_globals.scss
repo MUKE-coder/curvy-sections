@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $default-font;
+}
+body {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.fancy-heading {
+  color: $primary-color;
+  padding: 10px 3rem;
+  // background-color: yellow;
+  display: inline-flex;
+  // border-bottom: 1px solid green;
+  position: relative;
+  &::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 6%;
+    top: 80%;
+    transition: all 1s;
+  }
+  &:hover {
+    &::before {
+      width: 0;
+    }
+  }
+}
